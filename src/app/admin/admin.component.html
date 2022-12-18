@@ -1,0 +1,31 @@
+<div class="view bckim" style=" height: 115vh;  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8jaD6HsAwqTS9ir3vuhjoeXt-_ecLQ1ULWjGgUwL7c4rv-b2YkbXEkvniciugYZ_6ya8&usqp=CAU);   background-size: cover;">
+    <div class=" d-flex  justify-content-center" style="height: 100vh">
+        <div class="row align-self-center d-flex " style="display: contents;">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                <div class="row g-3 mt-4" >
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <h1 style="color:red"> Admin login</h1>
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label style="color:navy" for="username" class="form-label">User Name:</label>
+                        <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label style="color:navy" for="password" class="form-label">password:</label>
+                        <input name="password" [(ngModel)]="password" type="password" class="form-control">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <a (click)="login()" style="background-color:rgb(177, 119, 153)" class="btn">login</a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <a href="/employee" class="btn btn-outline-success">employee login here </a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <a href="/guard" class="btn btn-outline-success"> guard login here </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
