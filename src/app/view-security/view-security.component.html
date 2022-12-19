@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor=" let i of data">
+                    <div  class="card" style="width: 18rem;">
+                        <img class="rounded-circle mx-auto" width="200px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjKXgRq3PmwodGXsR_2-pI4M4GGXSFcwFOg&usqp=CAU" height="200px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">{{i.guardnumber}}</h5>
+                          <h5 class="card-title text-center">{{i.name}}</h5>
+                          <p class="card-text text-center">{{i.salary}}</p>
+                          <p class="card-text text-center">{{i.mobileNumber}}</p>
+                          <p class="card-text text-center">{{i.userName}}</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
