@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,7 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
+import { SearchGuardComponent } from './search-guard/search-guard.component';
 
 const myRoute:Routes=[
   {
@@ -41,6 +42,11 @@ const myRoute:Routes=[
   {
     path:"viewGuard",
     component: ViewSecurityComponent
+  },
+  {
+    path:"searchGuard",
+    component: SearchGuardComponent
+    
   }
 ]
 
@@ -53,7 +59,8 @@ const myRoute:Routes=[
     ViewEmployeeComponent,
     SearchEmployeeComponent,
     AddSecurityComponent,
-    ViewSecurityComponent
+    ViewSecurityComponent,
+    SearchGuardComponent
   ],
   imports: [
     BrowserModule,
