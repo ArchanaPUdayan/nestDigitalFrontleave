@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 const myRoute:Routes=[
   {
@@ -21,6 +22,10 @@ const myRoute:Routes=[
   {
     path:"add",
     component:AddemployeeComponent
+  },
+  {
+  path:"view",
+  component:ViewEmployeeComponent
   }
 ]
 
@@ -29,7 +34,8 @@ const myRoute:Routes=[
     AppComponent,
     AddemployeeComponent,
     AdminComponent,
-    LoginComponent
+    LoginComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
