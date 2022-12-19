@@ -10,6 +10,7 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
+import { AddSecurityComponent } from './add-security/add-security.component';
 
 const myRoute:Routes=[
   {
@@ -31,6 +32,10 @@ const myRoute:Routes=[
   {
     path:"search",
     component:SearchEmployeeComponent
+  },
+  {
+    path:"addGuard",
+    component:AddSecurityComponent
   }
 ]
 
@@ -41,7 +46,8 @@ const myRoute:Routes=[
     AdminComponent,
     LoginComponent,
     ViewEmployeeComponent,
-    SearchEmployeeComponent
+    SearchEmployeeComponent,
+    AddSecurityComponent
   ],
   imports: [
     BrowserModule,
