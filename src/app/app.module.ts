@@ -13,6 +13,7 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { SearchSecurityComponent } from './search-security/search-security.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -59,7 +60,8 @@ const myRoute:Routes=[
     SearchEmployeeComponent,
     AddSecurityComponent,
     ViewSecurityComponent,
-    SearchSecurityComponent
+    SearchSecurityComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
