@@ -14,6 +14,10 @@ import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { SearchSecurityComponent } from './search-security/search-security.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LeavenavbarComponent } from './leavenavbar/leavenavbar.component';
+import { ViewleavesComponent } from './viewleaves/viewleaves.component';
+import { ViewleavesstatusComponent } from './viewleavesstatus/viewleavesstatus.component';
+import { LoginSecurityComponent } from './login-security/login-security.component';
 
 const myRoute:Routes=[
   {
@@ -47,7 +51,22 @@ const myRoute:Routes=[
   {
     path:"searchGuard",
     component:SearchSecurityComponent
+  },
+   {
+    path:"viewLeaves",
+    component:ViewleavesstatusComponent
+
+  },
+  {
+    path:"Leaves",
+    component:ViewleavesComponent
+
+  },
+  {
+    path:"guard",
+    component: LoginSecurityComponent
   }
+
 ]
 
 @NgModule({
@@ -61,7 +80,13 @@ const myRoute:Routes=[
     AddSecurityComponent,
     ViewSecurityComponent,
     SearchSecurityComponent,
-    NavbarComponent
+    NavbarComponent,
+    LeavenavbarComponent,
+    ViewleavesComponent,
+    ViewleavesstatusComponent,
+    LoginSecurityComponent
+   
+
   ],
   imports: [
     BrowserModule,
